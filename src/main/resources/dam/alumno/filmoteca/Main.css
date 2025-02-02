@@ -1,0 +1,123 @@
+/* Estilo general de la aplicación */
+.root {
+    -fx-background-color: #3c3c3c;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #bdbdbd;
+}
+
+/*Titulo de la aplicaciom (peliculas) */
+#header{
+    -fx-font-size: 44px;
+    -fx-font-weight: bold;
+    -fx-fill: #bdbdbd;
+    -fx-font-family: "Arial";
+    -fx-effect: dropshadow( gaussian , black , 5 , 0 , 1 , 1 ); /* Efecto de sombreado en el titulo */
+}
+
+.text-area {
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-text-fill: #bdbdbd;
+}
+
+.text-area .content{
+    -fx-background-color: #5e5e5e;
+}
+
+.text-area .viewport {
+    -fx-background-color: transparent; /* Hace el fondo del viewport transparente, si no aparecen unos puntos blancos */
+}
+
+.text-area .scroll-pane .scroll-bar {
+    -fx-background-color: #505050; /* Color de fondo de la barra */
+}
+
+#textoTitulo, #textoValoracion, #textoAnio{
+    -fx-font-size: 16px;
+    -fx-fill: #bdbdbd;
+}
+
+
+/* Estilo para la tabla */
+.table-view {
+    -fx-background-color: #3c3c3c;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #bdbdbd;
+    -fx-border-color: #292929;
+    -fx-vertical-grid-lines-visible: false;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #555555;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #424141;
+}
+
+.table-row-cell:odd .table-cell {
+    -fx-text-fill: #d6d6d6;
+}
+
+.table-row-cell:even .table-cell {
+    -fx-text-fill: #e0e0e0;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #acacac;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #515151;
+    -fx-border-color: #818181;
+}
+
+.table-row-cell {
+    -fx-cell-size: 30px;
+}
+
+.table-cell {
+    -fx-font-size: 16px;
+    -fx-padding: 5px;
+}
+
+.table-view .scroll-bar{
+  -fx-opacity: 0;-fx-padding: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+/* Estilo para los botones */
+.button{
+    -fx-background-color: #5e5e5e;
+    -fx-text-fill: #bdbdbd;
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 45px;
+}
+
+.button:hover{
+    -fx-background-color: #4c4c4c;
+}
+
+#btnCerrar{
+    -fx-background-color: #7a1919;
+    -fx-text-fill: #bdbdbd;
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 45px;
+}
+
+#btnCerrar:hover{
+    -fx-background-color: #9a1919;
+}
+
+#txtTitulo, #txtValoracion, #txtAnio, #txtDescripcion{
+    -fx-font-size: 20px;
+    -fx-font-family: "Arial";
+    -fx-fill: #bdbdbd;
+}
+
